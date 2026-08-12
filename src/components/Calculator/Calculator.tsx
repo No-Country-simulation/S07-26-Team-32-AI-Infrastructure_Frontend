@@ -7,7 +7,7 @@ const Calculator = () => {
 
   const handleCalculate = async () => {
     try {
-      const res = await fetch("https://api.tu-backend.com/calculate", {
+      const res = await fetch("/api/calculate", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ a: inputA, b: inputB }),

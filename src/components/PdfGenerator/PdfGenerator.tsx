@@ -6,7 +6,7 @@ const PdfGenerator = () => {
   const handleGenerate = async () => {
     setLoading(true);
     try {
-      const res = await fetch("https://api.tu-backend.com/generate-pdf", {
+      const res = await fetch("/api/generate-pdf", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         // Podés enviar datos del benchmark o calculadora acá
